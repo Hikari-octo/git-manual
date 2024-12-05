@@ -1,0 +1,45 @@
+# config
+
+git config --global user.name <username>
+git config --global user.email <email>
+git config --global http.sslverify false
+
+# repo
+
+git init
+git clone <url> -b <branch or tag> <dest> / git clone <url> --recursive
+git branch / git branch -a
+git branch -d <branch> / git branch -D <branch>
+git add . / git add -u
+git rm
+git checkout <branch> / git checkout -b <branch>
+git commit -s / git commit -m "a new commit"
+git fetch
+git pull / git pull origin <branch>
+git reset / git reset --hard
+git restore <file> / git restore --staged <file>
+git status
+git log / git log -2 / git lop -p / git log --oneline
+git show <commit id>
+git push / git push -f / git push -u origin <branch>
+git remote -v
+git remote add origin <repo url>
+git merge <branch> / git rebase <branch> / git rebase -i <branch>
+git merge --continue / git merge --abort / git rebase --continue / git rebase --abort
+git merge --no-ff
+git push origin --delete <branch>
+git diff
+git format-patch <commit id> / git format-patch HEAD~2 / git format-patch HEAD^^
+git format-patch -2
+git format-patch -2 <commit id>
+git format-patch HEAD~3..HEAD~2 / git format-patch <older commit id>..<newer commit id>
+git apply <patch> / git am <patch>
+
+# submodule
+
+git submodule init
+git submodule update
+git submodule update --init / git submodule update --remote
+git submodule foreach git reset HEAD~1 --hard
+git submodule add <sub url> <sub folder>
+
